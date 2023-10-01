@@ -1,0 +1,188 @@
+header {
+    display: flex; /* Размещаем логотип и текст в одной строке */
+
+    font-family: Arial, sans-serif;
+    background-color: #93DBC4;
+    color: #E9F5F1;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Стили для логотипа */
+img {
+    max-width: 100px;
+    margin-right: 20px;
+    /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);*/
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+
+}
+
+/*.logo{*/
+/*    border-top-left-radius: 10px;*/
+/*    border-bottom-right-radius: 10px;*/
+/*    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+/* Стили для текста заголовка */
+.header-text h1 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    font-size: 16px; /* Размер шрифта текста */
+}
+
+.container {
+    display: flex;
+}
+
+.grid-demo-block {
+    flex: 0 0 50%;
+    background-color: #E9F5F1;
+    display: grid;
+    grid-template-areas: "demo1 demo2"
+                                "demo3 demo4";
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.play-button {
+    background-color: #F17757;
+    color: #E9F5F1;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+
+    border: none;
+    outline: 3px ridge #B3614D;
+    border-radius: 1rem;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+}
+
+.price-list {
+    flex: 0 0 50%;
+    background-color: #E9F5F1;
+    padding: 20px;
+    align-items: center;
+}
+
+.buy-button {
+    background-color: #538F7B;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    outline: 3px ridge #93DBC4;
+    border-radius: 1rem;
+    cursor: pointer;
+    /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);*/
+    filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+
+}
+
+
+/* Стили для текста */
+body {
+    font-family: Arial, sans-serif; /* Семейство шрифтов для всей страницы */
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 36px; /* Размер шрифта для заголовков h1 */
+    line-height: 1.2; /* Высота строки для заголовков h1 */
+    color: black; /* Цвет текста для заголовков h1 */
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px; /* Размер шрифта для заголовков h2 */
+    line-height: 1.2; /* Высота строки для заголовков h2 */
+    text-align: center; /* Горизонтальное выравнивание текста по центру */
+    color: #555; /* Цвет текста для заголовков h2 */
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+h3 {
+    font-size: 20px; /* Размер шрифта для заголовков h3 */
+    line-height: 1.2; /* Высота строки для заголовков h3 */
+    text-align: center; /* Горизонтальное выравнивание текста по центру */
+    color: #777; /* Цвет текста для заголовков h3 */
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+p {
+    font-size: 16px; /* Размер шрифта для обычных параграфов */
+    line-height: 1.5; /* Высота строки для обычных параграфов */
+    color: #333; /* Цвет текста для обычных параграфов */
+    margin-bottom: 15px; /* Отступ снизу для параграфов */
+    padding: 10px;
+    font-weight: normal;
+
+}
+
+
+
+.price-list ul li a {
+    color: #333; /* Цвет текста ссылок */
+    text-decoration: none; /* Убрать подчеркивание ссылок */
+}
+
+.price-list ul li a:hover {
+    text-decoration: underline; /* Подчеркнуть ссылку при наведении */
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 2px solid #ccc;
+    padding-left: 10px;
+    margin: 20px 0;
+}
+
+
+section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #93DBC4;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Стили для стилизации переформатированного текста */
+.underline-text {
+    text-decoration: underline; /* Подчеркивание текста */
+}
+
+.strike-through-text {
+    text-decoration: line-through; /* Зачеркивание текста */
+}
+
+.large-text {
+    font-size: 28px; /* Увеличенный размер шрифта */
+}
+
+.uppercase-text {
+    text-transform: uppercase; /* Текст в верхнем регистре */
+}
