@@ -1,0 +1,60 @@
+header {
+    font-family: Arial, sans-serif;
+    background-color: #93DBC4;
+    color: #E9F5F1;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.grid-demo-block {
+    flex: 0 0 50%;
+    background-color: #E9F5F1;
+    display: grid;
+    grid-template-areas: "demo1 demo2"
+                                "demo3 demo4";
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.play-button {
+    background-color: #F17757;
+    color: #E9F5F1;
+    padding: 10px;
+    border: none;
+    outline: 3px ridge #B3614D;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.price-list {
+    font-family: Arial, sans-serif;
+
+    flex: 0 0 50%;
+    background-color: #E9F5F1;
+    padding: 20px;
+    align-items: center;
+}
+
+.buy-button {
+    background-color: #538F7B;
+    color: white;
+
+    padding: 10px;
+    border: none;
+    outline: 3px ridge #93DBC4;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: auto;
+}
