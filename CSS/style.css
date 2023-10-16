@@ -9,7 +9,7 @@ header {
 }
 
 /* Стили для логотипа */
-img {
+.logo-img {
     max-width: 100px;
     margin-right: 20px;
     /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);*/
@@ -164,6 +164,8 @@ section {
 }
 
 footer {
+
+    width: 100%;
     background-color: #93DBC4;
     color: #fff;
     padding: 10px 0;
@@ -186,3 +188,54 @@ footer {
 .uppercase-text {
     text-transform: uppercase; /* Текст в верхнем регистре */
 }
+
+/* Адаптивность */
+@media screen and (max-width: 768px) {
+    header .logo, header .header-text {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    .gallery img {
+        width: 48%; /* две картинки в ряд на маленьких экранах */
+    }
+}
+/* Стили для галереи */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gallery-img {
+    margin: 10px; /* отступы вокруг гифок */
+    transition: transform 0.3s, filter 0.3s; /* плавный переход для некоторых свойств */
+    border-radius: 5px; /* скругленные уголки */
+}
+
+.gallery-img:hover {
+    transform: scale(1.1); /* увеличиваем гифку при наведении курсора */
+    filter: brightness(1.2); /* делаем гифку ярче при наведении курсора */
+}
+
+/* Стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
