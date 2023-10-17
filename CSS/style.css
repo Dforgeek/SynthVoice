@@ -6,6 +6,12 @@ header {
     color: #E9F5F1;
     padding: 20px;
     align-items: center;
+
+}
+
+footer{
+    position: absolute;
+
 }
 
 /* Стили для логотипа */
@@ -15,7 +21,7 @@ header {
     /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);*/
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
 
 }
 
@@ -47,7 +53,7 @@ header {
     grid-template-areas: "demo1 demo2"
                                 "demo3 demo4";
     grid-gap: 10px;
-    padding: 20px;
+    padding: 40px;
 }
 
 .grid-item {
@@ -69,7 +75,7 @@ header {
     outline: 3px ridge #B3614D;
     border-radius: 1rem;
     cursor: pointer;
-    filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
 }
 
 .price-list {
@@ -90,7 +96,7 @@ header {
     border-radius: 1rem;
     cursor: pointer;
     /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);*/
-    filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
 
 }
 
@@ -102,42 +108,41 @@ body {
 }
 
 h1 {
-    font-size: 36px; /* Размер шрифта для заголовков h1 */
-    line-height: 1.2; /* Высота строки для заголовков h1 */
-    color: black; /* Цвет текста для заголовков h1 */
+    font-size: 36px;
+    line-height: 1.2;
+    color: black;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 24px; /* Размер шрифта для заголовков h2 */
-    line-height: 1.2; /* Высота строки для заголовков h2 */
-    text-align: center; /* Горизонтальное выравнивание текста по центру */
-    color: #555; /* Цвет текста для заголовков h2 */
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: #555;
     padding: 10px;
     font-weight: bold;
 
 }
 
 h3 {
-    font-size: 20px; /* Размер шрифта для заголовков h3 */
-    line-height: 1.2; /* Высота строки для заголовков h3 */
-    text-align: center; /* Горизонтальное выравнивание текста по центру */
-    color: #777; /* Цвет текста для заголовков h3 */
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #777;
     padding: 10px;
     font-weight: bold;
 
 }
 
 p {
-    font-size: 16px; /* Размер шрифта для обычных параграфов */
-    line-height: 1.5; /* Высота строки для обычных параграфов */
-    color: #333; /* Цвет текста для обычных параграфов */
-    margin-bottom: 15px; /* Отступ снизу для параграфов */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 15px;
     padding: 10px;
     font-weight: normal;
 
 }
-
 
 
 .price-list ul li a {
@@ -174,23 +179,22 @@ footer {
 
 /* Стили для стилизации переформатированного текста */
 .underline-text {
-    text-decoration: underline; /* Подчеркивание текста */
+    text-decoration: underline;
 }
 
 .strike-through-text {
-    text-decoration: line-through; /* Зачеркивание текста */
+    text-decoration: line-through;
 }
 
 .large-text {
-    font-size: 28px; /* Увеличенный размер шрифта */
+    font-size: 28px;
 }
 
 .uppercase-text {
-    text-transform: uppercase; /* Текст в верхнем регистре */
+    text-transform: uppercase;
 }
 
-/* Адаптивность */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     header .logo, header .header-text {
         width: 100%;
         text-align: center;
@@ -201,17 +205,36 @@ footer {
         width: 48%; /* две картинки в ряд на маленьких экранах */
     }
 }
-/* Стили для галереи */
+
 .gallery {
     display: flex;
     justify-content: space-between;
 }
 
+@media screen and (min-width: 750px) {
+    .gallery-img {
+        width: 100%;
+        height: 100%;
 
-.gallery-img {
-    margin: 10px; /* отступы вокруг гифок */
-    transition: transform 0.3s, filter 0.3s; /* плавный переход для некоторых свойств */
-    border-radius: 5px; /* скругленные уголки */
+        margin: 30px; /* отступы вокруг гифок */
+        transition: transform 0.3s, filter 0.3s; /* плавный переход для свойств */
+        border-radius: 5px; /* скругленные уголки */
+        max-width: 400px; /* максимальная ширина */
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .gallery-img {
+        width: 100%;
+        height: 100%;
+
+        margin: 30px; /* отступы вокруг гифок */
+        transition: transform 0.3s, filter 0.3s; /* плавный переход для свойств */
+        border-radius: 5px; /* скругленные уголки */
+        max-width: 200px; /* максимальная ширина */
+        max-height: 200px;
+    }
 }
 
 .gallery-img:hover {
@@ -219,7 +242,6 @@ footer {
     filter: brightness(1.2); /* делаем гифку ярче при наведении курсора */
 }
 
-/* Стили для таблицы */
 table {
     width: 100%;
     border-collapse: collapse;

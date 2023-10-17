@@ -11,7 +11,7 @@
 <body>
 <header>
     <div class="logo">
-        <img src="logo.png" alt="Логотип SynthVoice">
+        <img src="logo.png" alt="Логотип SynthVoice" class="logo-img">
     </div>
     <div class="header-text">
         <h1><span style="color: black;">Открой для себя мир мемов и пранков.</span></h1>
@@ -30,39 +30,55 @@ print("Hello world!")
 
     <section>
         <h3 align="center">Теперь, когда вы поняли как это работает, попробуйте сами <em>(а лучше сразу купите)</em></h3>
-        <div class="container">
+        <!--        <div class="container">-->
 
-            <div class="grid-demo-block">
-                <div class="grid-item">
-                    <button type="button" id="b1" class="play-button">Древний рус</button>
-                </div>
-                <div class="grid-item">
-                    <button type="button" id="b2" class="play-button">Пригожин</button>
-                </div>
-                <div class="grid-item">
-                    <button type="button" id="b3" class="play-button">Копатыч</button>
-                </div>
-                <div class="grid-item">
-                    <button type="button" id="b4" class="play-button">Шило</button>
-                </div>
-
+        <div class="grid-demo-block">
+            <div class="grid-item">
+                <img src="русы-русы-пейте-воду-из-байкала.gif" alt="Картинка 1" class="gallery-img">
+                <button type="button" id="b1" class="play-button">Древний рус</button>
 
             </div>
-            <div class="price-list">
-                <h3 align="center">Прайс-лист</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Древний рус- $10</a></li>
-                        <li><a href="#">Сурен - $20</a></li>
-                        <li><a href="#">Роман Макаревич - $30</a></li>
-                    </ul>
-                </nav>
+            <div class="grid-item">
+                <img src="пригожин-шойгу.gif" alt="Картинка 1" class="gallery-img">
+                <button type="button" id="b2" class="play-button">Пригожин</button>
 
-                <button type="button" class="buy-button">Купить</button>
-
-                <aside><b>P.s.:</b>Может быть я заберу ваши деньги и <strong>ничего не дам в ответ</strong></aside>
+            </div>
+            <div class="grid-item">
+                <img src="from_point_of_science.gif" alt="Картинка 1" class="gallery-img">
+                <button type="button" id="b3" class="play-button">Копатыч</button>
+            </div>
+            <div class="grid-item">
+                <img src="roma.gif" alt="Картинка 1" class="gallery-img">
+                <button type="button" id="b4" class="play-button">Макаревич</button>
             </div>
         </div>
+
+    </section>
+    <section>
+        <h3>Прайс-лист</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Автор</th>
+                <th>Цена</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Древний рус</td>
+                <td>10 тугриков</td>
+            </tr>
+            <tr>
+                <td>Сурен</td>
+                <td>20 тугриков</td>
+            </tr>
+            <tr>
+                <td>Макаревич Рома</td>
+                <td>100 тугриков</td>
+            </tr>
+            </tbody>
+        </table>
+        <button type="button" class="buy-button">Купить</button>
     </section>
     <article>
         <section>
