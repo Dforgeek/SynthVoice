@@ -9,11 +9,6 @@ header {
 
 }
 
-footer{
-    position: absolute;
-
-}
-
 /* Стили для логотипа */
 .logo-img {
     max-width: 100px;
@@ -105,6 +100,11 @@ footer{
 body {
     font-family: Arial, sans-serif; /* Семейство шрифтов для всей страницы */
     letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
 }
 
 h1 {
@@ -173,8 +173,9 @@ footer {
     width: 100%;
     background-color: #93DBC4;
     color: #fff;
-    padding: 10px 0;
     text-align: center;
+    padding: 10px 0;
+
 }
 
 /* Стили для стилизации переформатированного текста */
@@ -260,4 +261,52 @@ th, td {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
+
+.form-section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-group textarea {
+    height: 150px;
+}
+
+.buy-button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #538F7B;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 
