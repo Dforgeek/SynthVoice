@@ -38,50 +38,35 @@ header nav a {
 header nav a:hover {
     text-decoration: underline;
 }
-/*.header-text h1 {*/
-/*    color: black;*/
-/*    font-size: 24px;*/
-/*}*/
 
-/*.header-text p {*/
-/*    font-size: 16px; !* Размер шрифта текста *!*/
-/*}*/
-
-/*header {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    background-color: #f8f8f8; !* Или любой другой цвет фона *!*/
-/*    padding: 20px;*/
-/*}*/
 
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px; /* Отступ между лого и текстом */
+    margin-bottom: 10px;
 }
 
 .logo-img {
-    height: 80px; /* Вы можете изменить это значение по своему усмотрению */
+    height: 80px;
 }
 
+
 .header-text {
-    text-align: center; /* Центрирование текста под логотипом */
-    margin-bottom: 20px; /* Отступ между текстом и навигацией */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .header-text h1 {
-    font-size: 2.5em; /* Увеличение размера названия сайта */
+    font-size: 2.5em;
     margin: 0;
     padding: 0;
-    color: black; /* Цвет заголовка */
+    color: black;
 }
 
 .header-text p {
-    font-size: 1em; /* Размер подзаголовка */
-    color: #333; /* Цвет подзаголовка */
+    font-size: 1em;
+    color: #333;
 }
 
 .navigation-menu ul {
@@ -94,18 +79,24 @@ header nav a:hover {
 }
 
 .navigation-menu li {
-    margin: 0 15px; /* Расстояние между пунктами меню */
+    margin: 0 15px;
 }
 
 .navigation-menu a {
     text-decoration: none;
-    color: black; /* Цвет текста ссылок */
-    padding: 10px 15px; /* Паддинг для ссылок */
-    font-size: 1em; /* Размер текста ссылок */
+    color: black;
+    padding: 10px 15px;
+    font-size: 1em;
     font-weight: bold;
 }
 
 .navigation-menu a:hover {
-    color: #538F7B; /* Цвет текста ссылок при наведении */
-    border-bottom: 3px solid #538F7B; /* Подчеркивание при наведении */
+    color: #538F7B;
+    border-bottom: 3px solid #538F7B;
+}
+
+
+.navigation-menu ul li.active a {
+    color: #07dc00;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }

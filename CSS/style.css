@@ -146,7 +146,7 @@ p {
 
 
 .price-list ul li a {
-    color: #333; /* Цвет текста ссылок */
+    color: #333;
     text-decoration: none; /* Убрать подчеркивание ссылок */
 }
 
@@ -220,7 +220,7 @@ footer {
         margin: 30px; /* отступы вокруг гифок */
         transition: transform 0.3s, filter 0.3s; /* плавный переход для свойств */
         border-radius: 5px; /* скругленные уголки */
-        max-width: 400px; /* максимальная ширина */
+        max-width: 400px;
         max-height: 400px;
     }
 }
@@ -233,7 +233,7 @@ footer {
         margin: 30px; /* отступы вокруг гифок */
         transition: transform 0.3s, filter 0.3s; /* плавный переход для свойств */
         border-radius: 5px; /* скругленные уголки */
-        max-width: 200px; /* максимальная ширина */
+        max-width: 200px;
         max-height: 200px;
     }
 }

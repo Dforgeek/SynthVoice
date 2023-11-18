@@ -27,3 +27,14 @@
         });
     });
 })();
+
+document.addEventListener('DOMContentLoaded', function() {
+    var menuItems = document.querySelectorAll('.navigation-menu ul li a');
+    var currentLocation = window.location.pathname.split('/').pop();
+
+    menuItems.forEach(function(item) {
+        if (currentLocation === item.getAttribute('href')) {
+            item.parentElement.classList.add('active');
+        }
+    });
+});
