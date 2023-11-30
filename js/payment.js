@@ -47,3 +47,48 @@ function updateOptions() {
         optionsContainer.appendChild(select);
     }
 }
+document.addEventListener('DOMContentLoaded', function() {
+    // Обновляем корзину при загрузке страницы
+    updateCartDisplay();
+
+    document.getElementById('payment-form').addEventListener('submit', function(event) {
+        // Обработка формы оплаты
+        event.preventDefault();
+        alert('Форма оплаты отправлена!');
+    });
+});
+
+function updateCartDisplay() {
+    var cartContainer = document.getElementById('cart-container');
+    cartContainer.innerHTML = ''; // Очищаем текущее содержимое корзины
+
+    // Получаем заказы из LocalStorage
+    var orders = JSON.parse(localStorage.getItem('orders')) || [];
+
+    // Если в корзине нет заказов, отображаем сообщение об этом
+    if (orders.length === 0) {
+        cartContainer.textContent = 'Ваша корзина пуста.';
+        return;
+    }
+
+    // Создаем и добавляем элементы заказа в корзину
+    orders.forEach(function(order, index) {
+        var orderElement = document.createElement('div');
+        orderElement.classList.add('cart-item');
+        orderElement.innerHTML = `
+            <p>Услуга: ${order.serviceType === 'neural-network' ? 'Нейросеть' : 'Живой голос'}</p>
+            <p>Выбор: ${order.additionalOption}</p>
+            <p>Текст: ${order.scriptText}</p>
+            <button onclick="removeFromCart(${index})">Удалить из корзины</button>
+        `;
+        cartContainer.appendChild(orderElement);
+    });
+}
+
+// Функция для удаления заказа из корзины
+window.removeFromCart = function(index) {
+    var orders = JSON.parse(localStorage.getItem('orders')) || [];
+    orders.splice(index, 1); // Удаляем заказ из массива
+    localStorage.setItem('orders', JSON.stringify(orders)); // Обновляем LocalStorage
+    updateCartDisplay(); // Обновляем отображение корзины
+};
