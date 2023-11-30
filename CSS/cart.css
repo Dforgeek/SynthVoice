@@ -1,48 +1,43 @@
-/* Стили для секции корзины */
 .cart-section {
-    background-color: #f8f8f8; /* Фон, схожий с фоном других секций */
+    background-color: #f8f8f8;
     padding: 20px;
     margin: 20px;
-    border-radius: 8px; /* Скругление углов, если это подходит к общему стилю */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Небольшая тень для выделения секции */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для элементов внутри корзины */
 .cart-item {
-    background-color: #ffffff; /* Фон для элементов корзины */
-    border: 1px solid #ddd; /* Граница элементов корзины */
-    padding: 15px; /* Отступы внутри элементов корзины */
-    margin-bottom: 10px; /* Отступ между элементами корзины */
-    border-radius: 4px; /* Скругление углов элементов корзины */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
 }
 
-/* Стили для кнопки удаления из корзины */
 .cart-item button {
-    background-color: #F17757; /* Цвет фона кнопки, аналогичный кнопке play-button */
-    color: #E9F5F1; /* Цвет текста */
-    padding: 10px 20px; /* Отступы кнопки */
-    margin-top: 10px; /* Отступ сверху */
-    font-size: 16px; /* Размер шрифта */
-    border: none; /* Убрать стандартную рамку */
-    outline: 3px ridge #B3614D; /* Стиль рамки */
-    border-radius: 1rem; /* Скругление углов */
-    cursor: pointer; /* Курсор в виде руки при наведении */
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); /* Тень кнопки */
+    background-color: #F17757;
+    color: #E9F5F1;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    outline: 3px ridge #B3614D;
+    border-radius: 1rem;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
 }
 
-/* Дополнительно, можно добавить эффект при наведении на кнопку */
 .cart-item button:hover {
-    background-color: #E1664B; /* Чуть более темный цвет при наведении */
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.4)); /* Углубление тени */
+    background-color: #E1664B;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.4));
 }
 
-/* Если нужно, добавьте медиа-запросы для адаптивности */
 @media screen and (max-width: 768px) {
     .cart-section {
         margin: 10px;
     }
 
     .cart-item button {
-        width: 100%; /* Кнопка на всю ширину элемента корзины на мобильных устройствах */
+        width: 100%;
     }
 }

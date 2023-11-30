@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function updateCartDisplay() {
     var cartContainer = document.getElementById('cart-container');
-    cartContainer.innerHTML = ''; // Очищаем текущее содержимое корзины
+    cartContainer.innerHTML = '';
 
     // Получаем заказы из LocalStorage
     var orders = JSON.parse(localStorage.getItem('orders')) || [];
@@ -85,10 +85,9 @@ function updateCartDisplay() {
     });
 }
 
-// Функция для удаления заказа из корзины
 window.removeFromCart = function(index) {
     var orders = JSON.parse(localStorage.getItem('orders')) || [];
-    orders.splice(index, 1); // Удаляем заказ из массива
-    localStorage.setItem('orders', JSON.stringify(orders)); // Обновляем LocalStorage
-    updateCartDisplay(); // Обновляем отображение корзины
+    orders.splice(index, 1);
+    localStorage.setItem('orders', JSON.stringify(orders));
+    updateCartDisplay();
 };
