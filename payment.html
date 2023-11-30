@@ -5,6 +5,8 @@
     <title>Оплата услуг - SynthVoice</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/cart.css">
+
     <link rel="icon" href="logo.png">
     <script src="js/pageLoad.js"></script>
 
@@ -16,12 +18,13 @@
     </div>
     <div class="header-text">
         <h1><span>SynthVoice</span></h1>
-        <p>Сделай своим персональным диктором Копатыча, Древнего руса, или Пригожина</p>
     </div>
     <nav class="navigation-menu">
         <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="payment.html">Оплата</a></li>
+            <li><a href="constructor.html">Заказ</a></li>
+
         </ul>
     </nav>
 </header>
@@ -39,21 +42,21 @@
                 <label for="contact-info">Контактные данные:</label>
                 <input type="text" id="contact-info" name="contact-info" required>
             </div>
-            <div class="input-group">
-                <label for="service-type">Вид услуги:</label>
-                <select id="service-type" name="service-type" required onchange="updateOptions()">
-                    <option value="">Выберите услугу...</option>
-                    <option value="voice-actor">Актёр озвучки</option>
-                    <option value="neural-network">Нейросеть</option>
-                </select>
-            </div>
-            <div class="input-group" id="options-container">
-                <!-- Дополнительные опции будут добавлены здесь -->
-            </div>
-            <div class="input-group">
-                <label for="script-text">Текст для озвучки:</label>
-                <textarea id="script-text" name="script-text" required></textarea>
-            </div>
+<!--            <div class="input-group">-->
+<!--                <label for="service-type">Вид услуги:</label>-->
+<!--                <select id="service-type" name="service-type" required onchange="updateOptions()">-->
+<!--                    <option value="">Выберите услугу...</option>-->
+<!--                    <option value="voice-actor">Актёр озвучки</option>-->
+<!--                    <option value="neural-network">Нейросеть</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--            <div class="input-group" id="options-container">-->
+<!--                &lt;!&ndash; Дополнительные опции будут добавлены здесь &ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="input-group">-->
+<!--                <label for="script-text">Текст для озвучки:</label>-->
+<!--                <textarea id="script-text" name="script-text" required></textarea>-->
+<!--            </div>-->
             <div class="input-group">
                 <label for="bank-details">Банковские данные:</label>
                 <input type="text" id="bank-details" name="bank-details" required>
@@ -61,12 +64,18 @@
             <button type="submit" class="buy-button">Оплатить</button>
         </form>
     </section>
+    <section class="cart-section">
+        <h2>Ваша корзина</h2>
+        <div id="cart-container">
+            <!-- Сюда будут добавляться заказы -->
+        </div>
+    </section>
 </main>
 
 <footer>
     <h4>По любым вопросам звоните 88005553535</h4>
 </footer>
 
-<script src="JS/payment.js"></script>
+<script src="js/payment.js"></script>
 </body>
 </html>

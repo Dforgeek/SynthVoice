@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание заказа - SynthVoice</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/cart.css">
+
+    <link rel="icon" href="logo.png">
+    <script src="js/order.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Логотип SynthVoice" class="logo-img">
+    </div>
+    <div class="header-text">
+        <h1><span>SynthVoice</span></h1>
+    </div>
+    <nav class="navigation-menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="payment.html">Оплата</a></li>
+            <li><a href="constructor.html">Заказ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="form-section">
+        <h2>Создание заказа</h2>
+        <form id="order-form">
+            <!-- Поля формы для ввода информации заказа -->
+            <div class="input-group">
+                <label for="service-type">Вид услуги:</label>
+                <select id="service-type" name="service-type" required>
+                    <option value="">Выберите услугу...</option>
+                    <option value="neural-network">Нейросеть</option>
+                    <option value="live-voice">Живой голос</option>
+                </select>
+            </div>
+            <div class="input-group" id="options-container">
+                <!-- Сюда будут добавляться дополнительные поля в зависимости от выбора услуги -->
+            </div>
+            <div class="input-group">
+                <label for="script-text">Текст для озвучки:</label>
+                <textarea id="script-text" name="script-text" required></textarea>
+            </div>
+            <button type="submit" class="add-to-cart-button">Добавить в корзину</button>
+        </form>
+    </section>
+    <!-- Контейнер для отображения корзины -->
+    <section class="cart-section">
+        <h2>Ваша корзина</h2>
+        <div id="cart-container">
+            <!-- Сюда будут добавляться заказы -->
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <h4>По любым вопросам звоните 88005553535</h4>
+</footer>
+
+<script src="js/order.js"></script>
+</body>
+</html>
